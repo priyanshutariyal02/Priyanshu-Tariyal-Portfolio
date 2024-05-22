@@ -7,7 +7,7 @@ import "../app/globals.css";
 
 const Hero = () => {
   return (
-    <div className="pb-20 sm:pb-[0px] pt-36 relative" id="home">
+    <div className="pb-20 sm:pb-[0px] pt-36 relative">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight

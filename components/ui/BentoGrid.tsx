@@ -51,8 +51,9 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "PostgreSQL", "ExpressJS"];
-  const rightLists = ["NodeJS", "MongoDB", "Git"];
+  const leftLists = ["ReactJS", "PostgreSQL", "ExpressJS", "JavaScript"];
+  const midLists = ["C/C++", "Java", "Python", "MySQL"];
+  const rightLists = ["CSS", "NodeJS", "MongoDB", "Git"];
 
   const [copied, setCopied] = useState(false);
 
@@ -141,13 +142,13 @@ export const BentoGridItem = ({
 
           {/* Tech stack list div */}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1 lg:gap-7 w-fit absolute right-[1rem] top-2 lg:right-[1rem] lg:top-3">
               {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+              <div className="flex flex-col gap-2 md:gap-3 lg:gap-5">
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                    className="lg:py-3 lg:px-3 py-2 px-3 text-[10px] lg:text-sm opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
@@ -155,17 +156,29 @@ export const BentoGridItem = ({
                 ))}
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
               </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-                {rightLists.map((item, i) => (
+              <div className="flex flex-col gap-2 md:gap-3 lg:gap-5">
+                {midLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                    className="lg:py-3 lg:px-3 py-2 px-2 text-[10px] lg:text-sm opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
                 ))}
+                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+              </div>
+              <div className="flex flex-col gap-2 md:gap-3 lg:gap-5">
+                {rightLists.map((item, i) => (
+                  <span
+                    key={i}
+                    className="lg:py-3 lg:px-3 py-2 px-3 text-[10px] lg:text-sm opacity-50 
+                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
+                    {item}
+                  </span>
+                ))}
+                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
               </div>
             </div>
           )}
