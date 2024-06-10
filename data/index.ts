@@ -93,6 +93,15 @@ export const projects = [
   {
     id: 3,
     pinTitle: "Completed",
+    title: "Blog Posts",
+    des: "Aiming to implement MySQL, this blog post website displays your created posts on the homepage.",
+    img: "/blogPosts.png",
+    iconLists: ["/re.svg", "my.png", "/tail.svg", "ex.svg"],
+    link: "https://github.com/priyanshutariyal02/blog-post",
+  },
+  {
+    id: 4,
+    pinTitle: "Completed",
     title: "My 3D Portfolio",
     des: "Interactive 3D portfolio with React.js & Three.js, featuring user-friendly Contact and About sections, and a dynamic Projects page.",
     img: "/p3.png",
@@ -100,7 +109,7 @@ export const projects = [
     link: "https://priyanshu-tariyal-portfolio.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     pinTitle: "Completed",
     title: "EpiGenerator",
     des: "Built an AI image generator with user prompts, intuitive UI, and community sharing for collaborative creativity.",
