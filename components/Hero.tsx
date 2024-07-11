@@ -63,7 +63,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Priyanshu Tariyal, a Aspiring Software Developer.
+            Hi! I&apos;m Priyanshu Tariyal, an Aspiring Software Developer.
           </p>
 
           <a href="#about">
